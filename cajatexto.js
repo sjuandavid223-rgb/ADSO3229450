@@ -4,7 +4,7 @@ function fnGeo() {
 
     datoVariable = document.getElementById("txtDato").value;
 
-    console.log("Dato:", datoVariable);
+    console.log(" Mi Dato:", datoVariable);
 
     fnSalidaParrafo(datoVariable);
 
