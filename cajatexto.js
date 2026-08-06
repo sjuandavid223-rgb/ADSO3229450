@@ -27,7 +27,6 @@ function fnAlerta(datoVariable) {
 
 }
 
-
 function fnCalculaRider() {
 
     let numero1 = 0;
@@ -37,21 +36,16 @@ function fnCalculaRider() {
     let resultadoResta = 0;
     let resultadoMultiplicacion = 0;
 
-    // Obtener valores
 
     numero1 = document.querySelector(".txtNum1").value;
 
     numero2 = document.querySelector("#txtNum2").value;
-
-    // Operaciones
 
     resultadoSuma = parseInt(numero1) + parseInt(numero2);
 
     resultadoResta = parseInt(numero1) - parseInt(numero2);
 
     resultadoMultiplicacion = parseInt(numero1) * parseInt(numero2);
-
-    // Mostrar en consola
 
     console.log(
         "Suma de datos:",
@@ -87,8 +81,6 @@ function fnCalculaRider() {
     );
 
 }
-
-
 
 function fnSalidaContenedorDivSuma(resultadoSuma) {
 
