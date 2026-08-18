@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Universe Interactive</title>
+    <link rel="stylesheet" href="Fondo.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <div class="background"></div>
+    <div class="nebula"></div>
+
+    <div id="cursor-light"></div>
+
+    <!-- HUD -->
+    <div class="hud">
+
+        <div class="logo">
+            NEON
+            <span>UNIVERSE</span>
+        </div>
+
+        <div class="stats">
+
+            <div>
+                SCORE
+                <strong id="score">0000</strong>
+            </div>
+
+            <div>
+                ENERGY
+                <div class="energy-bar">
+                    <span id="energy"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ESCENA -->
+    <div id="world">
+
+        <div class="grid"></div>
+
+        <div class="rings">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <!-- PERSONAJE 1 -->
+        <div class="character robot">
+
+            <div class="head">
+                <i></i>
+                <i></i>
+            </div>
+
+            <div class="body">
+                <span></span>
+            </div>
+
+            <div class="arm left"></div>
+            <div class="arm right"></div>
+
+            <div class="leg left"></div>
+            <div class="leg right"></div>
+
+        </div>
+
+
+        <!-- PERSONAJE 2 -->
+        <div class="character alien">
+
+            <div class="alien-head">
+                <i></i>
+                <i></i>
+            </div>
+
+            <div class="alien-body"></div>
+
+            <div class="alien-arm left"></div>
+            <div class="alien-arm right"></div>
+
+        </div>
+
+
+        <!-- OBJETOS -->
+        <div id="objects"></div>
+
+
+        <!-- DISPAROS -->
+        <div id="shots"></div>
+
+
+        <!-- JUGADOR -->
+        <div id="player">
+
+            <div class="core"></div>
+
+            <div class="player-ring"></div>
+            <div class="player-ring second"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MENÚ -->
+    <div id="menu">
+
+        <div class="menu-box">
+
+            <small>
+                INTERACTIVE 3D EXPERIENCE
+            </small>
+
+            <h1>
+                NEON
+                <span>UNIVERSE</span>
+            </h1>
+
+            <p>
+                Muévete por el universo,
+                recoge energía y destruye enemigos.
+            </p>
+
+            <div class="controls">
+
+                <span>🖱️ Mouse — Mover</span>
+                <span>👆 Click — Disparar</span>
+                <span>⌨️ WASD — Movimiento</span>
+                <span>⚡ Shift — Turbo</span>
+
+            </div>
+
+            <button id="play">
+                JUGAR
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAUSA -->
+    <div id="pause">
+
+        <div>
+            <h2>PAUSA</h2>
+            <p>Presiona P para continuar</p>
+        </div>
+
+    </div>
+
+
+    <!-- GAME OVER -->
+    <div id="gameover">
+
+        <div>
+
+            <small>MISSION COMPLETE</small>
+
+            <h2>GAME OVER</h2>
+
+            <p>
+                Puntuación
+            </p>
+
+            <strong id="final-score">
+                0000
+            </strong>
+
+            <button id="restart">
+                JUGAR DE NUEVO
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
