@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario Shadows</title>
+
+    <link rel="stylesheet" href="cajasshadow.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="logo">
+            <span>JD</span>
+        </div>
+
+         <!-- SEGUNDA IMAGEN -->
+    <div class="imagen-contenedor">
+        <img src="imagenlogo.avif" alt="Imagen futurista">
+    </div>
+
+
+        <h1>Contáctanos</h1>
+
+        <form>
+
+            <!-- NOMBRE -->
+
+            <div class="grupo">
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                >
+
+            </div>
+
+
+            <!-- CORREO -->
+
+            <div class="grupo">
+
+                <label for="correo">
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="Escribe tu correo"
+                >
+
+            </div>
+
+
+            <!-- MENSAJE -->
+
+            <div class="grupo">
+
+                <label for="mensaje">
+                    Mensaje
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    placeholder="Escribe tu mensaje"
+                ></textarea>
+
+            </div>
+
+
+            <!-- CHECKBOX -->
+
+            <div class="checkbox-grupo">
+
+                <input
+                    type="checkbox"
+                    id="terminos"
+                >
+
+                <label for="terminos">
+                    Acepto los términos
+                </label>
+
+            </div>
+
+
+            <!-- RADIO BUTTONS -->
+
+            <div class="grupo">
+
+                <label>
+                    Género
+                </label>
+
+                <div class="radio-grupo">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="genero"
+                            value="masculino"
+                        >
+
+                        Masculino
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="genero"
+                            value="femenino"
+                        >
+
+                        Femenino
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- SELECT -->
+
+            <div class="grupo">
+
+                <label for="pais">
+                    País
+                </label>
+
+                <select id="pais">
+
+                    <option value="">
+                        Selecciona un país
+                    </option>
+
+                    <option value="colombia">
+                        Colombia
+                    </option>
+
+                    <option value="mexico">
+                        México
+                    </option>
+
+                    <option value="argentina">
+                        Argentina
+                    </option>
+
+                    <option value="españa">
+                        España
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- SELECT MÚLTIPLE -->
+
+            <div class="grupo">
+
+                <label for="lenguajes">
+                    Lenguajes favoritos
+                </label>
+
+                <select
+                    id="lenguajes"
+                    multiple
+                >
+
+                    <option value="html">
+                        HTML
+                    </option>
+
+                    <option value="css">
+                        CSS
+                    </option>
+
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+
+                    <option value="python">
+                        Python
+                    </option>
+
+                    <option value="java">
+                        Java
+                    </option>
+
+                    <option value="php">
+                        PHP
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- BOTÓN -->
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

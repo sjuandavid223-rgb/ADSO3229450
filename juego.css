@@ -1,0 +1,707 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 30px;
+
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #172554,
+            #020617 65%
+        );
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.contenedor {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    background: #020617;
+
+    border: 2px solid #00ffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 30px #00ffff;
+}
+
+.encabezado h1 {
+
+    color: #00ffff;
+
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+}
+
+
+/* =========================================
+   INSTRUCCIONES
+========================================= */
+
+.instrucciones {
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background: #0f172a;
+
+    border: 2px solid #8b5cf6;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 15px
+        rgba(139,92,246,.5);
+}
+
+.instrucciones h2 {
+
+    color: #c4b5fd;
+
+    text-shadow:
+        0 0 10px #8b5cf6;
+}
+
+
+/* =========================================
+   PREGUNTA
+========================================= */
+
+.pregunta {
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background: #020617;
+
+    border: 2px solid #00ffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 12px
+        rgba(0,255,255,.4);
+}
+
+.pregunta h2 {
+
+    color: #ff00ff;
+
+    text-shadow:
+        0 0 10px #ff00ff;
+}
+
+.pregunta h3 {
+
+    color: white;
+}
+
+
+/* =========================================
+   CÓDIGO
+========================================= */
+
+.codigo {
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    background: #000;
+
+    border: 2px solid #8b5cf6;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 0 10px #8b5cf6;
+}
+
+.codigo pre {
+
+    margin: 0;
+
+    color: #00ff88;
+
+    font-family:
+        Consolas,
+        monospace;
+}
+
+
+/* =========================================
+   RESPUESTAS
+========================================= */
+
+.respuestas {
+
+    display: grid;
+
+    gap: 10px;
+}
+
+
+/*
+   Ocultamos los radio.
+   El label funciona como botón.
+*/
+
+.respuestas input {
+
+    display: none;
+}
+
+
+.respuesta {
+
+    display: block;
+
+    padding: 15px;
+
+    background: #0f172a;
+
+    border: 2px solid #334155;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    color: white;
+}
+
+
+/* =========================================
+   :HOVER
+========================================= */
+
+.respuesta:hover {
+
+    border-color: #00ffff;
+
+    color: #00ffff;
+
+    transform: translateX(5px);
+
+    box-shadow:
+        0 0 10px #00ffff;
+}
+
+
+/* =========================================
+   :ACTIVE
+========================================= */
+
+.respuesta:active {
+
+    transform: scale(.95);
+}
+
+
+/* =========================================
+   RESPUESTA CORRECTA
+========================================= */
+
+input:checked + .respuesta.correcta {
+
+    background: #052e16;
+
+    border-color: #00ff88;
+
+    color: #00ff88;
+
+    box-shadow:
+        0 0 15px #00ff88,
+        0 0 30px
+        rgba(0,255,136,.5);
+}
+
+
+/* =========================================
+   RESPUESTA INCORRECTA
+========================================= */
+
+input:checked + .respuesta.incorrecta {
+
+    background: #450a0a;
+
+    border-color: #ff004c;
+
+    color: #ff004c;
+
+    box-shadow:
+        0 0 15px #ff004c,
+        0 0 30px
+        rgba(255,0,76,.5);
+}
+
+
+/* =========================================
+   LABORATORIO
+========================================= */
+
+.demostracion {
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background: #020617;
+
+    border: 2px solid #ff00ff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 15px
+        rgba(255,0,255,.5);
+}
+
+
+/* =========================================
+   PÁRRAFOS
+========================================= */
+
+.lista p {
+
+    padding: 15px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    background: #1e293b;
+
+    transition: .3s;
+}
+
+
+/* =========================================
+   FIRST-CHILD
+========================================= */
+
+.lista p:first-child {
+
+    background: #172554;
+
+    color: #00ffff;
+
+    border-left: 5px solid #00ffff;
+
+    box-shadow:
+        0 0 10px #00ffff;
+}
+
+
+/* =========================================
+   LAST-CHILD
+========================================= */
+
+.lista p:last-child {
+
+    background: #3b0764;
+
+    color: #ff00ff;
+
+    border-left: 5px solid #ff00ff;
+
+    box-shadow:
+        0 0 10px #ff00ff;
+}
+
+
+/* =========================================
+   NTH-CHILD EVEN
+========================================= */
+
+.lista p:nth-child(even) {
+
+    border-left: 5px solid #ffaa00;
+
+    color: #ffaa00;
+
+    background: #422006;
+}
+
+
+/* =========================================
+   NTH-CHILD ODD
+========================================= */
+
+.lista p:nth-child(odd) {
+
+    border-left: 5px solid #00ff88;
+
+    color: #00ff88;
+
+    background: #052e16;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.lista p:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 15px currentColor;
+}
+
+
+/* =========================================
+   DIR
+========================================= */
+
+.direccion {
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background: #020617;
+
+    border: 2px solid #00ffff;
+
+    border-radius: 18px;
+}
+
+
+.direccion input {
+
+    display: none;
+}
+
+
+.direccion label {
+
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    margin: 5px;
+
+    border: 2px solid #64748b;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LTR SELECCIONADO
+========================================= */
+
+#ltr:checked + label {
+
+    background: #00ffff;
+
+    color: #020617;
+
+    box-shadow:
+        0 0 15px #00ffff;
+}
+
+
+/* =========================================
+   RTL SELECCIONADO
+========================================= */
+
+#rtl:checked + label {
+
+    background: #ff00ff;
+
+    color: white;
+
+    box-shadow:
+        0 0 15px #ff00ff;
+}
+
+
+/* =========================================
+   TEXTO DIR
+========================================= */
+
+.texto-dir {
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    border: 2px solid #475569;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+
+/*
+   Cuando LTR está seleccionado
+*/
+
+#ltr:checked ~ .texto-dir {
+
+    direction: ltr;
+
+    text-align: left;
+
+    color: #00ffff;
+
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 15px #00ffff;
+}
+
+
+/*
+   Cuando RTL está seleccionado
+*/
+
+#rtl:checked ~ .texto-dir {
+
+    direction: rtl;
+
+    text-align: right;
+
+    color: #ff00ff;
+
+    border-color: #ff00ff;
+
+    box-shadow:
+        0 0 15px #ff00ff;
+}
+
+
+/* =========================================
+   IDIOMAS
+========================================= */
+
+.idioma {
+
+    padding: 25px;
+
+    background: #020617;
+
+    border: 2px solid #00ff88;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 15px
+        rgba(0,255,136,.5);
+}
+
+
+.idioma > a {
+
+    display: inline-block;
+
+    padding: 10px;
+
+    margin: 5px;
+
+    border: 2px solid #334155;
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+
+/* =========================================
+   ANY-LINK
+========================================= */
+
+.idioma a:any-link {
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+.idioma a:link {
+
+    color: #00ffff;
+}
+
+
+/* =========================================
+   VISITED
+========================================= */
+
+.idioma a:visited {
+
+    color: #ff00ff;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.idioma a:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px currentColor;
+}
+
+
+/* =========================================
+   MENSAJES DE IDIOMA
+========================================= */
+
+.mensaje-idioma {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TARGET
+========================================= */
+
+.mensaje-idioma:target {
+
+    display: block;
+
+    border: 2px solid #00ffff;
+
+    box-shadow:
+        0 0 15px #00ffff;
+}
+
+
+/* =========================================
+   LANG ESPAÑOL
+========================================= */
+
+.mensaje-idioma:lang(es) {
+
+    color: #00ffff;
+}
+
+
+/* =========================================
+   LANG INGLÉS
+========================================= */
+
+.mensaje-idioma:lang(en) {
+
+    color: #3b82f6;
+}
+
+
+/* =========================================
+   LANG FRANCÉS
+========================================= */
+
+.mensaje-idioma:lang(fr) {
+
+    color: #ff00ff;
+}
+
+
+/* =========================================
+   LANG ÁRABE
+========================================= */
+
+.mensaje-idioma:lang(ar) {
+
+    color: #00ff88;
+
+    direction: rtl;
+
+    text-align: right;
+}
+
+@media(max-width:600px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .encabezado h1 {
+
+        font-size: 25px;
+    }
+
+    .pregunta,
+    .demostracion,
+    .direccion,
+    .idioma {
+
+        padding: 18px;
+    }
+
+}

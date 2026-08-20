@@ -1,0 +1,546 @@
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 40px;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #111827
+        );
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.contenedor {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: #0f172a;
+
+    border: 2px solid #00ffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 15px #00ffff,
+        0 0 30px rgba(0, 255, 255, 0.4);
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+h1 {
+
+    text-align: center;
+
+    color: #00ffff;
+
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.campo {
+
+    margin-bottom: 30px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #334155;
+
+    background: #111827;
+
+    transition: 0.3s;
+}
+
+
+.campo:hover {
+
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #00ffff;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 5px #00ffff;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #475569;
+
+    border-radius: 8px;
+
+    background: #020617;
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   INPUT :FOCUS
+========================================= */
+
+input:focus {
+
+    outline: none;
+
+    border-color: #00ffff;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+
+/* =========================================
+   PÁRRAFOS
+========================================= */
+
+.mensajes {
+
+    margin-top: 20px;
+}
+
+
+.mensajes p {
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    background: #1e293b;
+
+    border-left: 4px solid #64748b;
+
+    transition: 0.3s;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   :FIRST-CHILD
+========================================= */
+
+.mensajes p:first-child {
+
+    background: #172554;
+
+    border-left-color: #00ffff;
+
+    color: #00ffff;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+
+/* =========================================
+   :LAST-CHILD
+========================================= */
+
+.mensajes p:last-child {
+
+    background: #3b0764;
+
+    border-left-color: #ff00ff;
+
+    color: #ff00ff;
+
+    box-shadow:
+        0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+
+/* =========================================
+   :NTH-CHILD(EVEN)
+   PARES
+========================================= */
+
+.mensajes p:nth-child(even) {
+
+    background: #422006;
+
+    border-left-color: #ffaa00;
+
+    color: #ffaa00;
+
+    box-shadow:
+        0 0 10px rgba(255, 170, 0, 0.5);
+}
+
+
+/* =========================================
+   :NTH-CHILD(ODD)
+   IMPARES
+========================================= */
+
+.mensajes p:nth-child(odd) {
+
+    background: #052e16;
+
+    border-left-color: #00ff88;
+
+    color: #00ff88;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+
+/* =========================================
+   PRIORIDAD FIRST-CHILD
+========================================= */
+
+.mensajes p:first-child {
+
+    background: #172554;
+
+    border-left-color: #00ffff;
+
+    color: #00ffff;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+
+/* =========================================
+   PRIORIDAD LAST-CHILD
+========================================= */
+
+.mensajes p:last-child {
+
+    background: #3b0764;
+
+    border-left-color: #ff00ff;
+
+    color: #ff00ff;
+
+    box-shadow:
+        0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+
+/* =========================================
+   :HOVER
+========================================= */
+
+.mensajes p:hover {
+
+    transform: translateX(8px) scale(1.02);
+
+    border-left-width: 8px;
+
+    box-shadow:
+        0 0 15px currentColor;
+}
+
+
+/* =========================================
+   TÍTULOS DE LAS NUEVAS PSEUDOCLASES
+========================================= */
+
+.campo h2 {
+
+    color: #00ffff;
+
+    text-shadow:
+        0 0 8px #00ffff;
+
+    margin-top: 0;
+}
+
+
+/* =========================================
+   :ONLY-CHILD
+========================================= */
+
+/*
+   Selecciona un elemento que sea
+   el ÚNICO HIJO de su padre.
+*/
+
+.ejemplo-only-child p:only-child {
+
+    padding: 20px;
+
+    margin: 0;
+
+    border-radius: 10px;
+
+    background: #1e1b4b;
+
+    border: 2px solid #8b5cf6;
+
+    color: #c4b5fd;
+
+    box-shadow:
+        0 0 10px #8b5cf6,
+        0 0 25px rgba(139, 92, 246, 0.5);
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   :ONLY-OF-TYPE
+========================================= */
+
+/*
+   Selecciona el único elemento
+   de un determinado TIPO.
+
+   En este ejemplo existe:
+
+   <p>
+   <span>
+
+   Solo existe un P.
+*/
+
+.ejemplo-only-type p:only-of-type {
+
+    padding: 20px;
+
+    margin: 0;
+
+    border-radius: 10px;
+
+    background: #431407;
+
+    border: 2px solid #fb923c;
+
+    color: #fb923c;
+
+    box-shadow:
+        0 0 10px #fb923c,
+        0 0 25px rgba(251, 146, 60, 0.5);
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   SPAN DEL EJEMPLO ONLY-OF-TYPE
+========================================= */
+
+.ejemplo-only-type span {
+
+    display: block;
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    color: #94a3b8;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   :EMPTY
+========================================= */
+
+/*
+   Selecciona un elemento que
+   NO tiene ningún contenido.
+
+   El div .caja-vacia está
+   completamente vacío.
+*/
+
+.caja-vacia:empty {
+
+    height: 80px;
+
+    border: 3px dashed #ff00ff;
+
+    border-radius: 12px;
+
+    background: rgba(255, 0, 255, 0.08);
+
+    box-shadow:
+        0 0 10px #ff00ff,
+        0 0 25px rgba(255, 0, 255, 0.5);
+
+    position: relative;
+}
+
+
+.caja-vacia:empty::after {
+
+    content: "ELEMENTO VACÍO";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: #ff00ff;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 8px #ff00ff;
+
+    letter-spacing: 2px;
+}
+
+.explicacion-empty {
+
+    color: #cbd5e1;
+
+    margin-bottom: 15px;
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #00ffff;
+
+    color: #020617;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    background: #00ff88;
+
+    box-shadow:
+        0 0 15px #00ff88,
+        0 0 30px #00ff88,
+        0 0 45px rgba(0, 255, 136, 0.5);
+}
+
+
+button:active {
+
+    transform: scale(0.95);
+
+    box-shadow:
+        0 0 10px #ff00ff;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 20px;
+    }
+
+    .contenedor {
+
+        padding: 20px;
+    }
+
+    h1 {
+
+        font-size: 25px;
+    }
+
+    .mensajes p {
+
+        font-size: 14px;
+    }
+}

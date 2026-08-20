@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pseudoclases CSS Neon</title>
+
+    <link rel="stylesheet" href="pseudoclases.css">
+
+</head>
+
+
+<body>
+
+<div class="contenedor">
+
+
+    <!-- ========================================= -->
+    <!-- TITULO -->
+    <!-- ========================================= -->
+
+    <header class="encabezado">
+
+        <h1>⚡ PSEUDOCLASES CSS ⚡</h1>
+
+        <p>
+            Formularios interactivos con HTML y CSS
+        </p>
+
+    </header>
+
+
+    <!-- ========================================= -->
+    <!-- IDIOMAS -->
+    <!-- ========================================= -->
+
+    <section class="selector">
+
+        <h2>🌎 Selecciona un idioma</h2>
+
+        <div class="idiomas">
+
+            <a href="#es"
+               lang="es"
+               dir="ltr">
+                🇪🇸 Español
+            </a>
+
+            <a href="#en"
+               lang="en"
+               dir="ltr">
+                🇬🇧 English
+            </a>
+
+            <a href="#fr"
+               lang="fr"
+               dir="ltr">
+                🇫🇷 Français
+            </a>
+
+            <a href="#ru"
+               lang="ru"
+               dir="ltr">
+                🇷🇺 Русский
+            </a>
+
+            <a href="#pt"
+               lang="pt-BR"
+               dir="ltr">
+                🇧🇷 Português
+            </a>
+
+            <a href="#de"
+               lang="de"
+               dir="ltr">
+                🇩🇪 Deutsch
+            </a>
+
+            <a href="#ar"
+               lang="ar"
+               dir="rtl">
+                🇸🇦 العربية
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================= -->
+    <!-- ESPAÑOL -->
+    <!-- ========================================= -->
+
+    <section id="es"
+             class="formulario"
+             lang="es"
+             dir="ltr">
+
+        <h2>📝 Formulario en Español</h2>
+
+        <p>
+            Escribe utilizando LTR o RTL.
+        </p>
+
+
+        <!-- LTR / RTL -->
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-es"
+                id="ltr-es"
+                checked
+            >
+
+            <label for="ltr-es">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-es"
+                id="rtl-es"
+            >
+
+            <label for="rtl-es">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <!-- NOMBRE -->
+
+        <div class="campo">
+
+            <label for="nombre-es">
+                Nombre:
+            </label>
+
+            <input
+                id="nombre-es"
+                type="text"
+                placeholder="Escribe tu nombre"
+            >
+
+        </div>
+
+
+        <!-- CORREO -->
+
+        <div class="campo">
+
+            <label for="correo-es">
+                Correo electrónico:
+            </label>
+
+            <input
+                id="correo-es"
+                type="email"
+                placeholder="ejemplo@gmail.com"
+            >
+
+        </div>
+
+
+        <!-- CIUDAD -->
+
+        <div class="campo">
+
+            <label for="ciudad-es">
+                Ciudad:
+            </label>
+
+            <select id="ciudad-es">
+
+                <option>
+                    Selecciona una ciudad
+                </option>
+
+                <option>Bogotá</option>
+                <option>Medellín</option>
+                <option>Cali</option>
+                <option>Popayán</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- RADIO -->
+
+        <div class="campo">
+
+            <h3>Género</h3>
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="genero-es"
+                >
+
+                <span>Masculino</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="genero-es"
+                >
+
+                <span>Femenino</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="genero-es"
+                >
+
+                <span>Otro</span>
+
+            </label>
+
+        </div>
+
+
+        <!-- CHECKBOX -->
+
+        <div class="campo">
+
+            <h3>Intereses</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Programación</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Diseño</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Inteligencia Artificial</span>
+
+            </label>
+
+        </div>
+
+
+        <!-- MENSAJE -->
+
+        <div class="campo">
+
+            <label for="mensaje-es">
+                Mensaje:
+            </label>
+
+            <textarea
+                id="mensaje-es"
+                placeholder="Escribe tu mensaje..."
+            ></textarea>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ Enviar formulario
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- INGLÉS -->
+    <!-- ========================================= -->
+
+    <section id="en"
+             class="formulario"
+             lang="en"
+             dir="ltr">
+
+        <h2>📝 English Form</h2>
+
+        <p>
+            Write your information below.
+        </p>
+
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-en"
+                id="ltr-en"
+                checked
+            >
+
+            <label for="ltr-en">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-en"
+                id="rtl-en"
+            >
+
+            <label for="rtl-en">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nombre-en">
+                Name:
+            </label>
+
+            <input
+                id="nombre-en"
+                type="text"
+                placeholder="Write your name"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="correo-en">
+                Email:
+            </label>
+
+            <input
+                id="correo-en"
+                type="email"
+                placeholder="example@gmail.com"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="ciudad-en">
+                City:
+            </label>
+
+            <select id="ciudad-en">
+
+                <option>Select a city</option>
+
+                <option>Bogotá</option>
+                <option>Medellín</option>
+                <option>Cali</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>Interests</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Programming</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Design</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Artificial Intelligence</span>
+
+            </label>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ Submit form
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- FRANCÉS -->
+    <!-- ========================================= -->
+
+    <section id="fr"
+             class="formulario"
+             lang="fr"
+             dir="ltr">
+
+        <h2>📝 Formulaire en Français</h2>
+
+        <p>
+            Remplissez le formulaire.
+        </p>
+
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-fr"
+                id="ltr-fr"
+                checked
+            >
+
+            <label for="ltr-fr">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-fr"
+                id="rtl-fr"
+            >
+
+            <label for="rtl-fr">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nombre-fr">
+                Nom:
+            </label>
+
+            <input
+                id="nombre-fr"
+                type="text"
+                placeholder="Écrivez votre nom"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="correo-fr">
+                E-mail:
+            </label>
+
+            <input
+                id="correo-fr"
+                type="email"
+                placeholder="exemple@gmail.com"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="ciudad-fr">
+                Ville:
+            </label>
+
+            <select id="ciudad-fr">
+
+                <option>
+                    Sélectionnez une ville
+                </option>
+
+                <option>Bogotá</option>
+                <option>Medellín</option>
+                <option>Cali</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>Intérêts</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Programmation</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Design</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Intelligence artificielle</span>
+
+            </label>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ Envoyer le formulaire
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- RUSO -->
+    <!-- ========================================= -->
+
+    <section id="ru"
+             class="formulario"
+             lang="ru"
+             dir="ltr">
+
+        <h2>📝 Форма</h2>
+
+        <p>
+            Заполните форму ниже.
+        </p>
+
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-ru"
+                id="ltr-ru"
+                checked
+            >
+
+            <label for="ltr-ru">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-ru"
+                id="rtl-ru"
+            >
+
+            <label for="rtl-ru">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nombre-ru">
+                Имя:
+            </label>
+
+            <input
+                id="nombre-ru"
+                type="text"
+                placeholder="Введите ваше имя"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="correo-ru">
+                Электронная почта:
+            </label>
+
+            <input
+                id="correo-ru"
+                type="email"
+                placeholder="example@gmail.com"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="ciudad-ru">
+                Город:
+            </label>
+
+            <select id="ciudad-ru">
+
+                <option>
+                    Выберите город
+                </option>
+
+                <option>Богота</option>
+                <option>Медельин</option>
+                <option>Кали</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>Интересы</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Программирование</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Дизайн</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Искусственный интеллект</span>
+
+            </label>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ Отправить форму
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- PORTUGUÉS -->
+    <!-- ========================================= -->
+
+    <section id="pt"
+             class="formulario"
+             lang="pt-BR"
+             dir="ltr">
+
+        <h2>📝 Formulário em Português</h2>
+
+        <p>
+            Preencha o formulário abaixo.
+        </p>
+
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-pt"
+                id="ltr-pt"
+                checked
+            >
+
+            <label for="ltr-pt">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-pt"
+                id="rtl-pt"
+            >
+
+            <label for="rtl-pt">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nombre-pt">
+                Nome:
+            </label>
+
+            <input
+                id="nombre-pt"
+                type="text"
+                placeholder="Digite seu nome"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="correo-pt">
+                E-mail:
+            </label>
+
+            <input
+                id="correo-pt"
+                type="email"
+                placeholder="exemplo@gmail.com"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="ciudad-pt">
+                Cidade:
+            </label>
+
+            <select id="ciudad-pt">
+
+                <option>
+                    Selecione uma cidade
+                </option>
+
+                <option>Bogotá</option>
+                <option>Medellín</option>
+                <option>Cali</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>Interesses</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Programação</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Design</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Inteligência Artificial</span>
+
+            </label>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ Enviar formulário
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- ALEMÁN -->
+    <!-- ========================================= -->
+
+    <section id="de"
+             class="formulario"
+             lang="de"
+             dir="ltr">
+
+        <h2>📝 Formular auf Deutsch</h2>
+
+        <p>
+            Füllen Sie das Formular aus.
+        </p>
+
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-de"
+                id="ltr-de"
+                checked
+            >
+
+            <label for="ltr-de">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-de"
+                id="rtl-de"
+            >
+
+            <label for="rtl-de">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nombre-de">
+                Name:
+            </label>
+
+            <input
+                id="nombre-de"
+                type="text"
+                placeholder="Geben Sie Ihren Namen ein"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="correo-de">
+                E-Mail:
+            </label>
+
+            <input
+                id="correo-de"
+                type="email"
+                placeholder="beispiel@gmail.com"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="ciudad-de">
+                Stadt:
+            </label>
+
+            <select id="ciudad-de">
+
+                <option>
+                    Wählen Sie eine Stadt
+                </option>
+
+                <option>Bogotá</option>
+                <option>Medellín</option>
+                <option>Cali</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>Interessen</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Programmierung</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Design</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>Künstliche Intelligenz</span>
+
+            </label>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ Formular absenden
+        </button>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- ÁRABE -->
+    <!-- ========================================= -->
+
+    <section id="ar"
+             class="formulario"
+             lang="ar"
+             dir="rtl">
+
+        <h2>📝 نموذج التسجيل</h2>
+
+        <p>
+            املأ النموذج أدناه.
+        </p>
+
+
+        <div class="controles">
+
+            <input
+                type="radio"
+                name="direccion-ar"
+                id="ltr-ar"
+            >
+
+            <label for="ltr-ar">
+                LTR →
+            </label>
+
+
+            <input
+                type="radio"
+                name="direccion-ar"
+                id="rtl-ar"
+                checked
+            >
+
+            <label for="rtl-ar">
+                ← RTL
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="nombre-ar">
+                الاسم:
+            </label>
+
+            <input
+                id="nombre-ar"
+                type="text"
+                placeholder="اكتب اسمك"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="correo-ar">
+                البريد الإلكتروني:
+            </label>
+
+            <input
+                id="correo-ar"
+                type="email"
+                placeholder="example@gmail.com"
+            >
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="ciudad-ar">
+                المدينة:
+            </label>
+
+            <select id="ciudad-ar">
+
+                <option>
+                    اختر مدينة
+                </option>
+
+                <option>بوغوتا</option>
+                <option>ميديلين</option>
+                <option>كالي</option>
+                <option>بوبايان</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>الجنس</h3>
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="genero-ar"
+                >
+
+                <span>ذكر</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="genero-ar"
+                >
+
+                <span>أنثى</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="genero-ar"
+                >
+
+                <span>آخر</span>
+
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>الاهتمامات</h3>
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>البرمجة</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>التصميم</span>
+
+            </label>
+
+
+            <label class="opcion">
+
+                <input type="checkbox">
+
+                <span>الذكاء الاصطناعي</span>
+
+            </label>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="mensaje-ar">
+                الرسالة:
+            </label>
+
+            <textarea
+                id="mensaje-ar"
+                placeholder="اكتب رسالتك هنا..."
+            ></textarea>
+
+        </div>
+
+
+        <button type="button">
+            ⚡ إرسال النموذج
+        </button>
+
+    </section>
+
+
+</div>
+
+</body>
+
+</html>

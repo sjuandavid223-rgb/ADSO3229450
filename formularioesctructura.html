@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pseudoclases de estructura</title>
+
+    <link rel="stylesheet" href="formularioestructura.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Formulario - Pseudoclases de estructura</h1>
+
+    <form>
+
+        <!-- =========================================
+             CAMPO NOMBRE
+        ========================================== -->
+
+        <div class="campo">
+
+            <label for="nombre">
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+            >
+
+            <div class="mensajes">
+
+                <p>
+                    Primer mensaje: este es el primer párrafo.
+                </p>
+
+                <p>
+                    Segundo mensaje: este es un elemento PAR.
+                </p>
+
+                <p>
+                    Tercer mensaje: este es un elemento IMPAR.
+                </p>
+
+                <p>
+                    Cuarto mensaje: este es un elemento PAR.
+                </p>
+
+                <p>
+                    Quinto mensaje: este es un elemento IMPAR.
+                </p>
+
+                <p>
+                    Sexto mensaje: este es un elemento PAR.
+                </p>
+
+                <p>
+                    Último mensaje: este es el último párrafo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             CAMPO CORREO
+        ========================================== -->
+
+        <div class="campo">
+
+            <label for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="ejemplo@gmail.com"
+            >
+
+            <div class="mensajes">
+
+                <p>
+                    📌 Primer párrafo - IMPAR
+                </p>
+
+                <p>
+                    📌 Segundo párrafo - PAR
+                </p>
+
+                <p>
+                    📌 Tercer párrafo - IMPAR
+                </p>
+
+                <p>
+                    📌 Cuarto párrafo - PAR
+                </p>
+
+                <p>
+                    📌 Quinto párrafo - IMPAR
+                </p>
+
+                <p>
+                    📌 Sexto párrafo - PAR
+                </p>
+
+                <p>
+                    📌 Séptimo párrafo - IMPAR
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             :ONLY-CHILD
+        ========================================== -->
+
+        <div class="campo">
+
+            <h2>:only-child</h2>
+
+            <div class="ejemplo-only-child">
+
+                <p>
+                    ⭐ Soy el único hijo de este contenedor.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             :ONLY-OF-TYPE
+        ========================================== -->
+
+        <div class="campo">
+
+            <h2>:only-of-type</h2>
+
+            <div class="ejemplo-only-type">
+
+                <p>
+                    🔥 Soy el único elemento P dentro de este contenedor.
+                </p>
+
+                <span>
+                    Este es un elemento SPAN diferente.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================================
+             :EMPTY
+        ========================================== -->
+
+        <div class="campo">
+
+            <h2>:empty</h2>
+
+            <p class="explicacion-empty">
+                El siguiente cuadro está completamente vacío:
+            </p>
+
+            <div class="caja-vacia"></div>
+
+        </div>
+
+        <button type="submit">
+            Enviar formulario
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

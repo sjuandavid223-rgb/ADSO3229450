@@ -1,0 +1,960 @@
+/* ========================================= */
+/* GENERAL */
+/* ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 40px;
+
+    font-family:
+        Arial,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #101c3c,
+            #050816 60%,
+            #02030a
+        );
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+/* ========================================= */
+/* CONTENEDOR */
+/* ========================================= */
+
+.contenedor {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+.encabezado {
+
+    background: rgba(5, 10, 30, .85);
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 2px solid #00eaff;
+
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 30px rgba(0, 234, 255, .4),
+        inset 0 0 20px rgba(0, 234, 255, .08);
+}
+
+.encabezado h1 {
+
+    color: #00eaff;
+
+    text-shadow:
+        0 0 5px #00eaff,
+        0 0 15px #00eaff,
+        0 0 30px #00eaff;
+
+    margin-top: 0;
+}
+
+.encabezado p {
+
+    color: #d8faff;
+
+    text-shadow:
+        0 0 8px rgba(0, 234, 255, .7);
+}
+
+
+/* ========================================= */
+/* SELECTOR DE IDIOMAS */
+/* ========================================= */
+
+.selector {
+
+    background: rgba(5, 10, 30, .85);
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+
+    border: 2px solid #ff00ff;
+
+    box-shadow:
+        0 0 10px #ff00ff,
+        0 0 30px rgba(255, 0, 255, .3);
+}
+
+.selector h2 {
+
+    text-align: center;
+
+    color: #ff00ff;
+
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 15px #ff00ff;
+}
+
+
+/* ========================================= */
+/* IDIOMAS */
+/* ========================================= */
+
+.idiomas {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+}
+
+.idiomas a {
+
+    padding: 14px;
+
+    border: 2px solid #00eaff;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    background: #050816;
+
+    transition: .3s;
+
+    color: #00eaff;
+
+    box-shadow:
+        0 0 6px rgba(0, 234, 255, .5);
+}
+
+
+/* ========================================= */
+/* ANY-LINK */
+/* ========================================= */
+
+.idiomas a:any-link {
+
+    font-weight: bold;
+}
+
+
+/* ========================================= */
+/* LINK */
+/* ========================================= */
+
+.idiomas a:link {
+
+    color: #00eaff;
+}
+
+
+/* ========================================= */
+/* VISITED */
+/* ========================================= */
+
+.idiomas a:visited {
+
+    color: #d946ef;
+}
+
+
+/* ========================================= */
+/* HOVER */
+/* ========================================= */
+
+.idiomas a:hover {
+
+    transform: translateY(-4px);
+
+    background: #0b1230;
+
+    border-color: #ff00ff;
+
+    color: #ff00ff;
+
+    box-shadow:
+        0 0 8px #ff00ff,
+        0 0 20px #ff00ff;
+}
+
+
+/* ========================================= */
+/* ACTIVE */
+/* ========================================= */
+
+.idiomas a:active {
+
+    transform: scale(.94);
+
+    box-shadow:
+        0 0 20px #00eaff;
+}
+
+
+/* ========================================= */
+/* FOCUS-VISIBLE */
+/* ========================================= */
+
+.idiomas a:focus-visible {
+
+    outline: 3px solid #ffe600;
+
+    outline-offset: 4px;
+}
+
+
+/* ========================================= */
+/* FORMULARIOS */
+/* ========================================= */
+
+.formulario {
+
+    display: none;
+
+    background:
+        rgba(5, 10, 30, .92);
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 20px;
+
+    border: 2px solid #00eaff;
+
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 30px rgba(0, 234, 255, .3);
+
+    transition: .3s;
+}
+
+
+/* ========================================= */
+/* TARGET */
+/* ========================================= */
+
+.formulario:target {
+
+    display: block;
+
+    animation:
+        aparecer .5s ease;
+}
+
+
+/* Español por defecto */
+
+body:not(:has(.formulario:target))
+#es {
+
+    display: block;
+}
+
+
+/* ========================================= */
+/* LTR REAL */
+/* ========================================= */
+
+/*
+   IMPORTANTE:
+
+   :has() detecta cuál radio está seleccionado.
+
+   Cuando LTR está seleccionado:
+   el formulario obtiene direction:ltr.
+*/
+
+.formulario:has(
+    #ltr-es:checked,
+    #ltr-en:checked,
+    #ltr-fr:checked,
+    #ltr-ru:checked,
+    #ltr-pt:checked,
+    #ltr-de:checked,
+    #ltr-ar:checked
+) {
+
+    direction: ltr;
+
+    text-align: left;
+
+    border-left:
+        7px solid #00eaff;
+
+    border-right:
+        2px solid #00eaff;
+
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 30px rgba(0, 234, 255, .4);
+}
+
+
+/* ========================================= */
+/* RTL REAL */
+/* ========================================= */
+
+.formulario:has(
+    #rtl-es:checked,
+    #rtl-en:checked,
+    #rtl-fr:checked,
+    #rtl-ru:checked,
+    #rtl-pt:checked,
+    #rtl-de:checked,
+    #rtl-ar:checked
+) {
+
+    direction: rtl;
+
+    text-align: right;
+
+    border-right:
+        7px solid #39ff14;
+
+    border-left:
+        2px solid #39ff14;
+
+    box-shadow:
+        0 0 10px #39ff14,
+        0 0 30px rgba(57, 255, 20, .4);
+}
+
+
+/* ========================================= */
+/* CONTROLES */
+/* ========================================= */
+
+.controles {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin: 20px 0;
+
+    flex-wrap: wrap;
+}
+
+.controles input {
+
+    display: none;
+}
+
+.controles label {
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    border: 2px solid #555;
+
+    background: #070b1c;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.controles label:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #ff00ff;
+
+    color: #ff00ff;
+
+    box-shadow:
+        0 0 10px #ff00ff;
+}
+
+
+/* ========================================= */
+/* LTR SELECCIONADO */
+/* ========================================= */
+
+#ltr-es:checked + label,
+#ltr-en:checked + label,
+#ltr-fr:checked + label,
+#ltr-ru:checked + label,
+#ltr-pt:checked + label,
+#ltr-de:checked + label,
+#ltr-ar:checked + label {
+
+    background: #00eaff;
+
+    color: #02030a;
+
+    border-color: #00eaff;
+
+    box-shadow:
+        0 0 8px #00eaff,
+        0 0 20px #00eaff;
+}
+
+
+/* ========================================= */
+/* RTL SELECCIONADO */
+/* ========================================= */
+
+#rtl-es:checked + label,
+#rtl-en:checked + label,
+#rtl-fr:checked + label,
+#rtl-ru:checked + label,
+#rtl-pt:checked + label,
+#rtl-de:checked + label,
+#rtl-ar:checked + label {
+
+    background: #39ff14;
+
+    color: #02030a;
+
+    border-color: #39ff14;
+
+    box-shadow:
+        0 0 8px #39ff14,
+        0 0 20px #39ff14;
+}
+
+
+/* ========================================= */
+/* CAMPOS */
+/* ========================================= */
+
+.campo {
+
+    margin-bottom: 20px;
+
+    padding: 8px;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+
+/* ========================================= */
+/* HOVER CAMPO */
+/* ========================================= */
+
+.campo:hover {
+
+    background:
+        rgba(0, 234, 255, .05);
+}
+
+
+/* ========================================= */
+/* FOCUS-WITHIN */
+/* ========================================= */
+
+.campo:focus-within {
+
+    background:
+        rgba(255, 0, 255, .08);
+
+    box-shadow:
+        0 0 15px
+        rgba(255, 0, 255, .25);
+}
+
+
+/* ========================================= */
+/* LABEL */
+/* ========================================= */
+
+.campo label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #e7faff;
+
+    transition: .3s;
+}
+
+.campo:focus-within label {
+
+    color: #ff00ff;
+
+    text-shadow:
+        0 0 8px #ff00ff;
+}
+
+
+/* ========================================= */
+/* INPUTS */
+/* ========================================= */
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 6px;
+
+    border: 2px solid #00eaff;
+
+    border-radius: 9px;
+
+    background: #030615;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    transition: .3s;
+}
+
+
+/* ========================================= */
+/* PLACEHOLDER */
+/* ========================================= */
+
+input::placeholder,
+textarea::placeholder {
+
+    color: #718096;
+}
+
+
+/* ========================================= */
+/* DIR LTR INPUT */
+/* ========================================= */
+
+.formulario:has(
+    #ltr-es:checked,
+    #ltr-en:checked,
+    #ltr-fr:checked,
+    #ltr-ru:checked,
+    #ltr-pt:checked,
+    #ltr-de:checked,
+    #ltr-ar:checked
+)
+input[type="text"],
+.formulario:has(
+    #ltr-es:checked,
+    #ltr-en:checked,
+    #ltr-fr:checked,
+    #ltr-ru:checked,
+    #ltr-pt:checked,
+    #ltr-de:checked,
+    #ltr-ar:checked
+)
+input[type="email"],
+.formulario:has(
+    #ltr-es:checked,
+    #ltr-en:checked,
+    #ltr-fr:checked,
+    #ltr-ru:checked,
+    #ltr-pt:checked,
+    #ltr-de:checked,
+    #ltr-ar:checked
+)
+textarea {
+
+    direction: ltr;
+
+    text-align: left;
+}
+
+
+/* ========================================= */
+/* DIR RTL INPUT */
+/* ========================================= */
+
+.formulario:has(
+    #rtl-es:checked,
+    #rtl-en:checked,
+    #rtl-fr:checked,
+    #rtl-ru:checked,
+    #rtl-pt:checked,
+    #rtl-de:checked,
+    #rtl-ar:checked
+)
+input[type="text"],
+.formulario:has(
+    #rtl-es:checked,
+    #rtl-en:checked,
+    #rtl-fr:checked,
+    #rtl-ru:checked,
+    #rtl-pt:checked,
+    #rtl-de:checked,
+    #rtl-ar:checked
+)
+input[type="email"],
+.formulario:has(
+    #rtl-es:checked,
+    #rtl-en:checked,
+    #rtl-fr:checked,
+    #rtl-ru:checked,
+    #rtl-pt:checked,
+    #rtl-de:checked,
+    #rtl-ar:checked
+)
+textarea {
+
+    direction: rtl;
+
+    text-align: right;
+}
+
+
+/* ========================================= */
+/* HOVER INPUT */
+/* ========================================= */
+
+input:hover,
+textarea:hover,
+select:hover {
+
+    border-color: #ff00ff;
+
+    box-shadow:
+        0 0 10px
+        rgba(255, 0, 255, .5);
+}
+
+
+/* ========================================= */
+/* FOCUS */
+/* ========================================= */
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #ff00ff;
+
+    box-shadow:
+        0 0 8px #ff00ff,
+        0 0 20px rgba(255, 0, 255, .5);
+}
+
+
+/* ========================================= */
+/* OPCIONES */
+/* ========================================= */
+
+.opcion {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    margin: 5px 0;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+
+/* ========================================= */
+/* LTR OPCIONES */
+/* ========================================= */
+
+.formulario:has(
+    #ltr-es:checked,
+    #ltr-en:checked,
+    #ltr-fr:checked,
+    #ltr-ru:checked,
+    #ltr-pt:checked,
+    #ltr-de:checked,
+    #ltr-ar:checked
+)
+.opcion {
+
+    flex-direction: row;
+
+    direction: ltr;
+}
+
+
+/* ========================================= */
+/* RTL OPCIONES */
+/* ========================================= */
+
+.formulario:has(
+    #rtl-es:checked,
+    #rtl-en:checked,
+    #rtl-fr:checked,
+    #rtl-ru:checked,
+    #rtl-pt:checked,
+    #rtl-de:checked,
+    #rtl-ar:checked
+)
+.opcion {
+
+    flex-direction: row-reverse;
+
+    direction: rtl;
+}
+
+
+/* ========================================= */
+/* HOVER OPCIONES */
+/* ========================================= */
+
+.opcion:hover {
+
+    background:
+        rgba(0, 234, 255, .08);
+
+    box-shadow:
+        0 0 10px
+        rgba(0, 234, 255, .2);
+}
+
+
+/* ========================================= */
+/* CHECKED */
+/* ========================================= */
+
+.opcion input:checked {
+
+    accent-color: #39ff14;
+
+    transform: scale(1.25);
+
+    filter:
+        drop-shadow(0 0 5px #39ff14);
+}
+
+
+/* ========================================= */
+/* ACTIVE */
+/* ========================================= */
+
+.opcion input:active {
+
+    transform: scale(.8);
+}
+
+
+/* ========================================= */
+/* FOCUS-VISIBLE */
+/* ========================================= */
+
+.opcion input:focus-visible {
+
+    outline: 3px solid #ffe600;
+
+    outline-offset: 4px;
+}
+
+
+/* ========================================= */
+/* BOTÓN */
+/* ========================================= */
+
+.formulario button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 2px solid #00eaff;
+
+    border-radius: 10px;
+
+    background: #030615;
+
+    color: #00eaff;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow:
+        0 0 7px #00eaff;
+}
+
+
+/* ========================================= */
+/* BOTÓN HOVER */
+/* ========================================= */
+
+.formulario button:hover {
+
+    background: #00eaff;
+
+    color: #02030a;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 30px #00eaff;
+}
+
+
+/* ========================================= */
+/* BOTÓN ACTIVE */
+/* ========================================= */
+
+.formulario button:active {
+
+    transform: scale(.94);
+}
+
+
+/* ========================================= */
+/* BOTÓN FOCUS-VISIBLE */
+/* ========================================= */
+
+.formulario button:focus-visible {
+
+    outline: 3px solid #ffe600;
+
+    outline-offset: 4px;
+}
+
+
+/* ========================================= */
+/* :LANG */
+/* ========================================= */
+
+html:lang(es) .selector {
+
+    border-color: #00eaff;
+}
+
+html:lang(en) .selector {
+
+    border-color: #39ff14;
+}
+
+html:lang(fr) .selector {
+
+    border-color: #00ffff;
+}
+
+html:lang(ru) .selector {
+
+    border-color: #ff00ff;
+}
+
+html:lang(pt) .selector {
+
+    border-color: #39ff14;
+}
+
+html:lang(de) .selector {
+
+    border-color: #ffe600;
+}
+
+html:lang(ar) .selector {
+
+    border-color: #ff6600;
+}
+
+
+/* ========================================= */
+/* ANIMACIÓN */
+/* ========================================= */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px)
+            scale(.98);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 20px;
+    }
+
+    .idiomas {
+
+        grid-template-columns: 1fr;
+    }
+
+    .controles {
+
+        flex-wrap: wrap;
+    }
+
+}

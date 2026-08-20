@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Neon Challenge</title>
+
+    <link rel="stylesheet"
+          href="juego.css">
+
+</head>
+
+
+<body>
+
+
+<div class="contenedor">
+
+
+  
+
+    <header class="encabezado">
+
+        <h1>
+            ⚡ CSS NEON CHALLENGE ⚡
+        </h1>
+
+        <p>
+            ¡Demuestra cuánto sabes sobre pseudoclases CSS!
+        </p>
+
+    </header>
+
+
+    <!-- =========================================
+         INSTRUCCIONES
+    ========================================== -->
+
+    <section class="instrucciones">
+
+        <h2>
+            🎮 ¿Cómo jugar?
+        </h2>
+
+        <p>
+            Lee cada pregunta y selecciona una respuesta.
+        </p>
+
+        <p>
+            Las respuestas correctas se iluminarán en verde.
+        </p>
+
+        <p>
+            Las respuestas incorrectas se mostrarán en rojo.
+        </p>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 1
+         FIRST-CHILD
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 1
+        </h2>
+
+        <h3>
+            ¿Qué pseudoclase selecciona al primer hijo?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+.mensajes p:first-child {
+    color: cyan;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p1"
+                id="p1a"
+            >
+
+            <label for="p1a"
+                   class="respuesta incorrecta">
+
+                :last-child
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p1"
+                id="p1b"
+            >
+
+            <label for="p1b"
+                   class="respuesta correcta">
+
+                :first-child
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p1"
+                id="p1c"
+            >
+
+            <label for="p1c"
+                   class="respuesta incorrecta">
+
+                :empty
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 2
+         LAST-CHILD
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 2
+        </h2>
+
+        <h3>
+            ¿Cuál selecciona el último hijo?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+p:last-child {
+    color: magenta;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p2"
+                id="p2a"
+            >
+
+            <label
+                for="p2a"
+                class="respuesta correcta">
+
+                :last-child
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p2"
+                id="p2b"
+            >
+
+            <label
+                for="p2b"
+                class="respuesta incorrecta">
+
+                :first-child
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p2"
+                id="p2c"
+            >
+
+            <label
+                for="p2c"
+                class="respuesta incorrecta">
+
+                :visited
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 3
+         EVEN
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 3
+        </h2>
+
+        <h3>
+            ¿Qué selecciona los elementos pares?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+p:nth-child(even) {
+    color: orange;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p3"
+                id="p3a"
+            >
+
+            <label
+                for="p3a"
+                class="respuesta correcta">
+
+                :nth-child(even)
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p3"
+                id="p3b"
+            >
+
+            <label
+                for="p3b"
+                class="respuesta incorrecta">
+
+                :nth-child(odd)
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p3"
+                id="p3c"
+            >
+
+            <label
+                for="p3c"
+                class="respuesta incorrecta">
+
+                :only-child
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 4
+         ODD
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 4
+        </h2>
+
+        <h3>
+            ¿Qué selecciona los elementos impares?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+p:nth-child(odd) {
+    color: lime;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p4"
+                id="p4a"
+            >
+
+            <label
+                for="p4a"
+                class="respuesta incorrecta">
+
+                :nth-child(even)
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p4"
+                id="p4b"
+            >
+
+            <label
+                for="p4b"
+                class="respuesta correcta">
+
+                :nth-child(odd)
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p4"
+                id="p4c"
+            >
+
+            <label
+                for="p4c"
+                class="respuesta incorrecta">
+
+                :only-of-type
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 5
+         ONLY CHILD
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 5
+        </h2>
+
+        <h3>
+            ¿Qué hace :only-child?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+p:only-child {
+    color: purple;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p5"
+                id="p5a"
+            >
+
+            <label
+                for="p5a"
+                class="respuesta incorrecta">
+
+                Selecciona el primer hijo
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p5"
+                id="p5b"
+            >
+
+            <label
+                for="p5b"
+                class="respuesta correcta">
+
+                Selecciona el único hijo
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p5"
+                id="p5c"
+            >
+
+            <label
+                for="p5c"
+                class="respuesta incorrecta">
+
+                Selecciona elementos pares
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 6
+         ONLY OF TYPE
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 6
+        </h2>
+
+        <h3>
+            ¿Qué hace :only-of-type?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+p:only-of-type {
+    color: orange;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p6"
+                id="p6a"
+            >
+
+            <label
+                for="p6a"
+                class="respuesta correcta">
+
+                Selecciona el único elemento de ese tipo
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p6"
+                id="p6b"
+            >
+
+            <label
+                for="p6b"
+                class="respuesta incorrecta">
+
+                Selecciona todos los elementos
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p6"
+                id="p6c"
+            >
+
+            <label
+                for="p6c"
+                class="respuesta incorrecta">
+
+                Selecciona el último elemento
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 7
+         EMPTY
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 7
+        </h2>
+
+        <h3>
+            ¿Qué pseudoclase selecciona un elemento vacío?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+.caja:empty {
+    border: 2px solid magenta;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p7"
+                id="p7a"
+            >
+
+            <label
+                for="p7a"
+                class="respuesta incorrecta">
+
+                :blank
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p7"
+                id="p7b"
+            >
+
+            <label
+                for="p7b"
+                class="respuesta correcta">
+
+                :empty
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p7"
+                id="p7c"
+            >
+
+            <label
+                for="p7c"
+                class="respuesta incorrecta">
+
+                :nothing
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PREGUNTA 8
+         CHECKED
+    ========================================== -->
+
+    <section class="pregunta">
+
+        <h2>
+            🧩 Reto 8
+        </h2>
+
+        <h3>
+            ¿Qué pseudoclase detecta un checkbox seleccionado?
+        </h3>
+
+
+        <div class="codigo">
+
+<pre>
+input:checked {
+    accent-color: cyan;
+}
+</pre>
+
+        </div>
+
+
+        <div class="respuestas">
+
+            <input
+                type="radio"
+                name="p8"
+                id="p8a"
+            >
+
+            <label
+                for="p8a"
+                class="respuesta correcta">
+
+                :checked
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p8"
+                id="p8b"
+            >
+
+            <label
+                for="p8b"
+                class="respuesta incorrecta">
+
+                :selected
+
+            </label>
+
+
+            <input
+                type="radio"
+                name="p8"
+                id="p8c"
+            >
+
+            <label
+                for="p8c"
+                class="respuesta incorrecta">
+
+                :active
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         DEMOSTRACIÓN ESTRUCTURA
+    ========================================== -->
+
+    <section class="demostracion">
+
+        <h2>
+            🔬 Laboratorio CSS
+        </h2>
+
+        <p>
+            Observa cómo funcionan las pseudoclases:
+        </p>
+
+
+        <div class="lista">
+
+            <p>1️⃣ Primer elemento</p>
+
+            <p>2️⃣ Segundo elemento</p>
+
+            <p>3️⃣ Tercer elemento</p>
+
+            <p>4️⃣ Cuarto elemento</p>
+
+            <p>5️⃣ Quinto elemento</p>
+
+            <p>6️⃣ Sexto elemento</p>
+
+            <p>7️⃣ Séptimo elemento</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         DIR
+    ========================================== -->
+
+    <section class="direccion">
+
+        <h2>
+            ↔️ :dir()
+        </h2>
+
+        <p>
+            Selecciona una dirección:
+        </p>
+
+
+        <input
+            type="radio"
+            name="direccion"
+            id="ltr"
+            checked
+        >
+
+        <label for="ltr">
+            LTR →
+        </label>
+
+
+        <input
+            type="radio"
+            name="direccion"
+            id="rtl"
+        >
+
+        <label for="rtl">
+            ← RTL
+        </label>
+
+
+        <div class="texto-dir">
+
+            هذا النص يمكن أن يتغير اتجاهه
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         LANG
+    ========================================== -->
+
+    <section class="idioma">
+
+        <h2>
+            🌎 :lang()
+        </h2>
+
+        <p>
+            Selecciona un idioma:
+        </p>
+
+
+        <a href="#es">
+            🇪🇸 Español
+        </a>
+
+        <a href="#en">
+            🇬🇧 English
+        </a>
+
+        <a href="#fr">
+            🇫🇷 Français
+        </a>
+
+        <a href="#ar">
+            🇸🇦 العربية
+        </a>
+
+
+        <div
+            id="es"
+            lang="es"
+            class="mensaje-idioma">
+
+            ¡Hola! Español
+
+        </div>
+
+
+        <div
+            id="en"
+            lang="en"
+            class="mensaje-idioma">
+
+            Hello! English
+
+        </div>
+
+
+        <div
+            id="fr"
+            lang="fr"
+            class="mensaje-idioma">
+
+            Bonjour ! Français
+
+        </div>
+
+
+        <div
+            id="ar"
+            lang="ar"
+            dir="rtl"
+            class="mensaje-idioma">
+
+            مرحباً! العربية
+
+        </div>
+
+    </section>
+
+
+</div>
+
+</body>
+
+</html>
