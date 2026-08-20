@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#222;
+}
+
+.paisaje{
+    width:900px;
+    height:500px;
+    overflow:hidden;
+}
+
+/* ======================
+        CIELO
+====================== */
+
+.cielo{
+
+    height:50%;
+
+    background:
+
+    /* Halo del sol */
+    radial-gradient(circle at 50% 80%,
+        rgba(249, 249, 182, 0.95) 0%,
+        rgba(246, 238, 123, 0.9) 9%,
+        rgba(250, 219, 106, 0.7) 16%,
+        rgba(255,180,120,.45) 30%,
+        rgba(255,150,150,.20) 45%,
+        transparent 90%
+    ),
+
+    /* Degradado del cielo */
+    linear-gradient(
+        to bottom,
+        #3c4562 0%,
+        #6a6ba1 25%,
+        #c38da7 55%,
+        #f59e7e 80%,
+        #ec9256 100%
+    );
+
+}
+
+/* ======================
+        MAR
+====================== */
+
+.mar{
+
+    height:50%;
+
+    background:
+
+    /* Reflejo del sol */
+    radial-gradient(
+        ellipse at center top,
+
+        rgba(252, 231, 174, 0.4) 5%,
+        rgba(251, 194, 174, 0.25) 23%,
+        rgba(255,180,180,.15) 35%,
+        transparent 55%
+    ),
+
+    /* Agua */
+    linear-gradient(
+        to bottom,
+        #072546 0%,
+        #09407e 45%,
+        #0c417d 70%,
+        #062349 100%
+    );
+
+}

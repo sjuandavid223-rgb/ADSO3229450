@@ -1,0 +1,151 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+    background:#f4f4f4;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+h1{
+
+    margin-bottom:40px;
+
+    color:#333;
+
+}
+
+.contenedor{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.caja{
+
+    text-align:center;
+
+}
+
+h3{
+
+    margin-bottom:15px;
+
+    color:#444;
+
+}
+
+.gradiente{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:4px solid #222;
+
+}
+
+/*=========================
+    BASIC CONIC
+=========================*/
+
+.basic{
+
+    background:conic-gradient(
+
+        red,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        magenta,
+        red
+
+    );
+
+}
+
+/*=========================
+    FROM 45°
+=========================*/
+
+.angle{
+
+    background:conic-gradient(
+
+        from 45deg,
+
+        red,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        magenta,
+        red
+
+    );
+
+}
+
+/*=========================
+    FROM CENTER
+=========================*/
+
+.center{
+
+    background:conic-gradient(
+
+        from 180deg at center,
+
+        #ff0000,
+        #ff8800,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0000ff,
+        #8000ff,
+        #ff0000
+
+    );
+
+}
+
+/*=========================
+    PIE CHART
+=========================*/
+
+.pie{
+
+    background:conic-gradient(
+
+        #ff0000 0deg 70deg,
+
+        #2196f3 70deg 150deg,
+
+        #4caf50 150deg 250deg,
+
+        #ffeb3b 250deg 320deg,
+
+        #9c27b0 320deg 360deg
+
+    );
+
+}

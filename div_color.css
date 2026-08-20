@@ -1,0 +1,22 @@
+body {
+    margin: 50px;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Un color de fondo neutral */
+}
+
+.color-contrast {
+    width: 50%; /* Ajusta el tamaño según necesites */
+    height: 80vh; /* Ajusta el tamaño según necesites */
+    border: 5px solid black; /* Borde oscuro para el contraste */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    background: linear-gradient(25deg, 
+        rgba(255, 0, 0, 1) 0%, /* Rojo puro en la esquina superior izquierda */
+        rgba(255, 255, 255, 1) 50%, /* Blanco puro en el centro diagonal */
+        rgba(0, 0, 255, 1) 100% /* Azul puro en la esquina inferior derecha */
+    );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
